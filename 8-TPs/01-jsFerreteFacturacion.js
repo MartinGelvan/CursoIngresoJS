@@ -51,6 +51,7 @@ function PrecioFinal ()
 	var precioTres
 	var suma
 	var precioConIva
+	var precioFinalConIva
 
 	precioUno=txtIdPrecioUno.value;
 	precioUno=parseInt(precioUno);
@@ -65,8 +66,12 @@ function PrecioFinal ()
 
 	precioConIva=suma*21/100;
 
-	alert("El resultado de la suma es de: "+suma);
-	alert("El precio con un 21% de IVA es de: "+precioConIva);
+	precioFinalConIva=suma+precioConIva;
+
+	alert("El precio final con el 21% de IVA es de: "+precioFinalConIva);
+
+	/*alert("El resultado de la suma es de: "+suma);
+	alert("El precio con un 21% de IVA es de: "+precioConIva);*/
 
 
 }
