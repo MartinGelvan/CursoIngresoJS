@@ -6,9 +6,10 @@ C.	Para hacer un contrapiso de 1m x 1m se necesitan 2 bolsas de cemento y 3 de c
 
 function Rectangulo () 
 {
-	var largoTerreno
-	var anchoTerreno
-	var cantidadAlambre
+	var largoTerreno;
+	var anchoTerreno;
+	var perimetro;
+	var cantidadDeAlambre
 
 	largoTerreno=txtIdLargo.value;
 	largoTerreno=parseInt(largoTerreno);
@@ -16,46 +17,60 @@ function Rectangulo ()
 	anchoTerreno=txtIdAncho.value;
 	anchoTerreno=parseInt(anchoTerreno);
 
-	cantidadAlambre=(largoTerreno*6)+(anchoTerreno*6);
 
-	alert("La cantidad de alambre a comprar es de: "+cantidadAlambre);
+	perimetro=(anchoTerreno+largoTerreno)*2;
+	cantidadDeAlambre=perimetro*3;
+
+
+	alert("La cantidad de alambre que hay que comprar es de: "+cantidadDeAlambre);
 
 }
 function Circulo () 
 {
-	var radio
-	var cantidadAlambreCircunferencia
+	var tomaRadio;
+    var calculoAlambre;
+   
+    tomaRadio=txtIdRadio.value;
+    tomaRadio=parseInt(tomaRadio);
+   
+    calculoAlambre=tomaRadio*3.14*6; //3*3.14*3
+    
+    alert("En las 3 vueltas de alambre se necesita comprar "+calculoAlambre+ " metros de alambre");
+	
 
-	radio=txtIdRadio.value;
-	radio=parseInt(radio);
-
-	cantidadAlambreCircunferencia=radio*3.14*6; //(2*3.14*radio)*3
-
-	alert("La cantidad de alambre a comprar es de: "+cantidadAlambreCircunferencia);
 }
+
+
 function Materiales () 
 {
-	var largoTerrenoDos
-	var anchoTerrenoDos
-	var cantidadCemento
-	var cantidadCal
-	var areaTerreno
+	 var Largo;
+    var Ancho;
+    var Cemento;
+    var Cal;
+    var superficie;
 
-	largoTerrenoDos=txtIdLargo.value;
-	largoTerrenoDos=parseInt(largoTerrenoDos);
+    Cemento=2;
 
-	anchoTerrenoDos=txtIdAncho.value;
-	anchoTerrenoDos=parseInt(anchoTerrenoDos);
+    Cal=3;
+    
 
-	areaTerreno=largoTerrenoDos*anchoTerrenoDos;
+    Largo=txtIdLargo.value;
+    Largo=parseInt(Largo);
+    Ancho=txtIdAncho.value;
+    Ancho=parseInt(Ancho);
 
-	cantidadCemento=areaTerreno*2;
+    superficie=Largo*Ancho;
 
-	cantidadCal=areaTerreno*3;
-
-	alert("La cantidad de bolsas de cemento es de: "+cantidadCemento);
-	alert("La cantidad de bolsas de cal es de: "+cantidadCal);
+    Cal=superficie*3;
+    Cemento=superficie*2;
 
 
-	
+    
+
+    /*Cal=(tomaLargo+tomaAncho)*3;
+    Cemento=(tomaLargo+tomaAncho)*2;*/
+
+     alert("Las bolsas que vamos a necesitar para cubir el "+Ancho+" de ancho "+ "y para el  "+Largo+ " del largo del terreno,se van a necesitar "+Cemento+" bolsas de cemento y tambien "+Cal +" bolsas de cal ");
+
+
 }

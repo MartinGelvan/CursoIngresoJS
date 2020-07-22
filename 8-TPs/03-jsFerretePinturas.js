@@ -10,7 +10,7 @@ function FahrenheitCentigrados ()
 	temperaturaFahrenheit=txtIdTemperatura.value;
 	temperaturaFahrenheit=parseInt(temperaturaFahrenheit);
 
-	temperaturaCentigrados=(temperaturaFahrenheit-32)/1.8;
+	temperaturaCentigrados=(temperaturaFahrenheit-32)/1.8; //(temperaturaFahrenheit*9)/5+32
 
 	alert("La temperatura a centigrados es de: "+temperaturaCentigrados);
 }

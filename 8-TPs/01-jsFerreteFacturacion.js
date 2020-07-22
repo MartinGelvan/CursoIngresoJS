@@ -6,9 +6,9 @@ C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
 function Sumar () 
 {
 	var precioUno;
-	var precioDos
-	var precioTres
-	var suma
+	var precioDos;
+	var precioTres;
+	var suma;
 
 	precioUno=txtIdPrecioUno.value;
 	precioUno=parseInt(precioUno);
@@ -27,9 +27,9 @@ function Sumar ()
 function Promedio () 
 {
 	var precioUno;
-	var precioDos
-	var precioTres
-	var promedioTotal
+	var precioDos;
+	var precioTres;
+	var promedioTotal;
 
 	precioUno=txtIdPrecioUno.value;
 	precioUno=parseInt(precioUno);
@@ -47,11 +47,11 @@ function Promedio ()
 function PrecioFinal () 
 {
 	var precioUno;
-	var precioDos
-	var precioTres
-	var suma
-	var precioConIva
-	var precioFinalConIva
+	var precioDos;
+	var precioTres;
+	var suma;
+	var precioConIva;
+	var precioFinalConIva;
 
 	precioUno=txtIdPrecioUno.value;
 	precioUno=parseInt(precioUno);
